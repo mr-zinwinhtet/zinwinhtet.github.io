@@ -1,0 +1,30 @@
+<html lang="en" ng-app="demoApp">
+
+    <head>
+
+        <title>Student Details App</title>
+        <link rel="stylesheet" href="css/bootstrap-combined-min.css"/>
+		<!--Required JS Files List :start -->
+		<script src="lib/angular.js"></script>
+		<script src="lib/angular-ui-bootstrap-tpls-2.5.0.min.js"></script>
+		<script src="angularDemo.js"></script>
+		<!--Required JS Files List :end -->
+    </head>
+    
+    <body class="container">
+
+		
+		<ul class="breadcrumb">
+		  <li><a href="#">Home</a> <span class="divider">/</span></li>
+		  <li><a href="#">Library</a> <span class="divider">/</span></li>
+		  <li class="active">Data</li>
+		</ul>
+		
+		<div class="row-fluid" ng-controller="studentCtrl">
+			<div class="span2">{{student.firstName}}  </div>
+			<div class="span4"><progress percent="studentMark"></progress></div>
+		</div>
+		
+		
+    </body>
+</html>
